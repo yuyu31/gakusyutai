@@ -1,10 +1,21 @@
 body{
-    background-color: orange;
-    color: white;
+    background-color: white;
+    color: black;
+    font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-p.title img{
-    width: 500px;
+.title{ /*imgで全ての画像を、iframeで埋め込んだ全ての動画を指定できる */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content{
+    margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*/
+    margin-right: 300px;
 }
 
 .h1{
@@ -16,7 +27,7 @@ p.title img{
 .container{
     width: 100%;
     display: flex;
-    background-color: chocolate;
+    background-color: yellow;
 }
 .banner{
     height: 80px;
