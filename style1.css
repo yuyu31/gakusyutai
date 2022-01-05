@@ -21,6 +21,11 @@ img{
     margin-right: 500px;
 }
 
+.subtitle{ /*謹賀新年などのサブタイトル*/
+    text-align: center;
+    color: red;
+}
+
 .h1{
     text-align:center;
     height:60px;
@@ -28,6 +33,7 @@ img{
 }
 
 .container{ /*container全体にかかる*/
+    font-size: large; /*18pxくらい*/
     display: flex;
     margin-top: 40px;
     margin: 0;
@@ -143,10 +149,11 @@ img{
   
   /* sns-navi */
   
+  /*不要？
   #footer .sns-navi {
     margin: 0 0 0 auto;
     padding: 0;
-  }
+  }*/
   #footer .sns-navi li {
     display: inline-block;
     margin: 0 20px 0 0;
