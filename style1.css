@@ -16,10 +16,10 @@ img{
     width: 150px;
 }
 
-.content{
-    margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*/
+/*.content{
+    margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*//*
     margin-right: 500px;
-}
+}*/
 
 .subtitle{ /*謹賀新年などのサブタイトル*/
     text-align: center;
