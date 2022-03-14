@@ -16,6 +16,22 @@ img{
     width: 150px;
 }
 
+ul { /*複数の画像を横並びで表示*/
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(2) {
+  margin: 0 10px;
+}
+
+#rounded img{ /*画像の角に丸みを持たせる*/
+    border-radius: 10px;
+}
+
 /*.content{
     margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*//*
     margin-right: 500px;
