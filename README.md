@@ -1,2 +1,2 @@
-# 楽習隊　Public Web Site
+# 楽習隊　Public Website
 サーバーを借りるまでの緊急サーバー。引継ぎまでになんとかする。
