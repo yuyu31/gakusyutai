@@ -1,0 +1,257 @@
+body{
+  background-color: white;
+  color: black;
+  font-family:'メイリオ';
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title{ /*imgで全ての画像を、iframeで埋め込んだ全ての動画を指定できる */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*height: 60px;*/
+}
+
+/*楽習隊アイコンのサイズにのみ係る（2023.1.11）*/
+.title img{
+  width: 150px;
+}
+
+img{
+  width: 150px;
+}
+
+a{
+  color:black; /*デフォルトで青字なのを黒字に変更*/
+  text-decoration: none; /*デフォルトでつく下線を削除*/
+}
+
+a:hover{ /*文字列の上にポインタを置いた場合をホバーという*/
+  opacity: .5; /*ホバー状態で透明度*50%*/
+}
+
+ul { /*複数の画像を横並びで表示*/
+display: flex;
+list-style: none;
+}
+
+
+
+li:nth-child(2) {
+margin: 0 10px;
+}
+
+#rounded img{ /*画像の角に丸みを持たせる*/
+  border-radius: 10px;
+}
+
+/*.content{
+  margin-left: 300px; /*文章を載せるところの左に余白を作る。最近のはやりの構成*//*
+  margin-right: 500px;
+}*/
+
+.subtitle{ /*謹賀新年などのサブタイトル*/
+  text-align: center;
+  color: red;
+}
+
+.h1{
+  text-align:center;
+  /*height:60px;*/ /*要らない*/
+  line-height:60px;
+  font-size: 20px;
+}
+
+.container{ /*container全体にかかる*/
+  font-size: 22px; /*18pxくらい*/
+  display: flex;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.container li{ /*containerのそれぞれにかかる*/
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0 10px; /*2つ目の値で要素の間隔を規定*/
+  margin-left: 20px;
+}
+
+
+/*ここからフッター要素*/
+#footer {
+  position: relative;
+  margin-top: 40px;
+  color: #fff;
+}
+#footer a {
+  text-decoration: none;
+  color: #fff;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer .primary {
+  padding: 40px 20px;
+  background-color:dimgray
+}
+#footer .secondary {
+  display: flex;
+  padding: 40px 20px;
+  background: #333;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .primary {
+    padding: 20px 20px;
+    background: #333;
+  }
+  #footer .secondary {
+    display: block;
+    padding: 20px 20px;
+  }
+}
+
+/* footer-logo */
+
+#footer .logo {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  #footer .logo {
+    font-size: 16px;
+  }
+}
+
+/* address */
+
+.address {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .address {
+    font-size: 12px;
+  }
+}
+
+/* navi */
+
+.navi-row {
+  display: flex;
+  margin-top: 40px;
+}
+#footer .navi {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#footer .navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+#footer .navi li:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navi-row {
+    display: block;
+    margin-top: 15px;
+  }
+  #footer .navi {
+    font-size: 12px;
+  }
+  #footer .navi li {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* sns-navi */
+
+/*不要？
+#footer .sns-navi {
+  margin: 0 0 0 auto;
+  padding: 0;
+}*/
+#footer .sns-navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+#footer .sns-navi li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .sns-navi {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #footer .sns-navi li {
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+/* sitenavi 不要？*/
+
+#footer .sitenavi {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#footer .sitenavi li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+#footer .sitenavi li:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .sitenavi {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/* copyright */
+
+#footer .copyright {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  #footer .copyright {
+    width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
